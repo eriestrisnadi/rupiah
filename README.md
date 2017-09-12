@@ -7,6 +7,10 @@ jQuery is required, so include it first. Download [jQuery.rupiah](https://raw.gi
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="/path/to/rupiah.min.js" charset="utf-8" type="text/javascript"></script>
 ```
+You can also install using the node package managers [NPM](https://www.npmjs.com/package/jquery-match-height).
+```sh
+npm install rupiah
+```
 
 ## Usage
 ```js

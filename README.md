@@ -2,7 +2,7 @@
 jQuery.rupiah is a plugin that convert to localized number to IDR and unlocalized string IDR to number.
 
 ## Install
-jQuery is required, so include it first. Download [jQuery.rupiah]('https://raw.githubusercontent.com/lowsprofile/rupiah/master/dist/rupiah.min.js') and include the script in your HTML file:
+jQuery is required, so include it first. Download [jQuery.rupiah](https://raw.githubusercontent.com/lowsprofile/rupiah/master/dist/rupiah.min.js) and include the script in your HTML file:
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="/path/to/rupiah.min.js" charset="utf-8" type="text/javascript"></script>
@@ -62,9 +62,9 @@ Where:
 ```
 
 ## License
-jQuery.rupiah is licensed under [The ISC License]('https://opensource.org/licenses/ISC') (ISC)
+jQuery.rupiah is licensed under [The ISC License](https://opensource.org/licenses/ISC) (ISC)
 
-Copyright (c) 2017 Eries Trisnadi [<me@eries.id>]('mailto:me@eries.id')
+Copyright (c) 2017 Eries Trisnadi [<me@eries.id>](mailto:me@eries.id)
 
 Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
 

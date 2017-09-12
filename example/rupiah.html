@@ -12,7 +12,7 @@
     <script type="text/javascript">
       $(function() {
         var data = 20000, idr = {};
-        idr.string = data.rupiah();
+        idr.string = data.rupiah({decimal: false});
         idr.number = idr.string.rupiah({localized: false});
         $('.idr').rupiah();
         console.log(idr);

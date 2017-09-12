@@ -33,6 +33,7 @@
   var _parseOptions = function(opts) {
     var options = {
       localized: true,
+      decimal: true,
     }
 
     if (typeof opts === 'object') {
@@ -42,13 +43,13 @@
     return options
   }
 
-  var _localizedIDR = function(value) {
+  var _localizedIDR = function(value, opts) {
     if (window.Intl && typeof window.Intl === "object"){
       return Number(value).
         toLocaleString('id-ID', {
           style: 'currency',
           currency: 'IDR',
-          minimumFractionDigits: 0
+          minimumFractionDigits: (opts.decimal) ? 2 : 0
         })
     }
 
@@ -56,7 +57,7 @@
         _valrev = value.toString().split('').reverse().join('')
   	for(var i = 0; i < _valrev.length; i++){
       if(i%3 === 0){
-        _rupiah += _valrev.substr(i,3) + '.'
+        _rupiah += _valrev.substr(i,3) + '.' + (opts.decimal) ? ',00' : null
       }
     }
   	return 'Rp' + _rupiah.split('', _rupiah.length - 1).reverse().join('')
@@ -82,7 +83,7 @@
       return String(this)
     }
 
-    return _localizedIDR($value)
+    return _localizedIDR($value, $options)
   }
 
   // Object Elements
@@ -110,7 +111,7 @@
       }
 
       $value = $preval
-      $elem.val(_localizedIDR($value))
+      $elem.val(_localizedIDR($value, $options))
     }
 
     if($elem.text()){
@@ -120,7 +121,7 @@
       }
 
       $value = $preval
-      $elem.text(_localizedIDR($value))
+      $elem.text(_localizedIDR($value, $options))
     }
 
     return this

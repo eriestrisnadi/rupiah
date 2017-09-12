@@ -16,7 +16,7 @@ npm install rupiah
 ```js
 $(function() {
   var data = 20000, idr = {};
-  idr.string = data.rupiah();
+  idr.string = data.rupiah({decimal: false});
   idr.number = idr.string.rupiah({localized: false});
   $('.idr').rupiah();
   console.log(idr);
@@ -32,12 +32,15 @@ If the selected is an input, the value of the input will be set to the localized
 The default `options` are:
 ```js
 {
-  localized: true
+  localized: true,
+  decimal: true,
 }
 ```
 Where:
 * `localized: true` is to localized number to IDR
 * `localized: false` is to unlocalized IDR to number
+* `decimal: true` is to enabled 2 digits decimal of localized IDR
+* `decimal: false` is to disabled 2 digits decimal of localized IDR
 
 ## Example
 ```html
@@ -55,7 +58,7 @@ Where:
     <script type="text/javascript">
       $(function() {
         var data = 20000, idr = {};
-        idr.string = data.rupiah();
+        idr.string = data.rupiah({decimal: false});
         idr.number = idr.string.rupiah({localized: false});
         $('.idr').rupiah();
         console.log(idr);

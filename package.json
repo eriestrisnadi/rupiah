@@ -2,7 +2,7 @@
   "name": "rupiah",
   "version": "0.0.1",
   "description": "jQuery.rupiah is a plugin that convert to localized number to IDR and unlocalized string IDR to number.",
-  "main": "index.js",
+  "main": "dist/rupiah.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

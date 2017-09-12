@@ -1,0 +1,29 @@
+{
+  "name": "rupiah",
+  "version": "0.0.1",
+  "description": "convert number to localized Indonesian Rupiah",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "convert",
+    "to",
+    "rupiah",
+    "localized",
+    "currency",
+    "rupiah"
+  ],
+  "author": "Eries Trisnadi <me@eries.id>",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-uglify": "^3.1.0"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}

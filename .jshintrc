@@ -1,0 +1,22 @@
+{
+  "globals": {
+    "jQuery": true,
+    "$": true,
+    "Router": true,
+    "showdown": true
+  },
+  "asi": true,
+  "curly": true,
+  "eqeqeq": true,
+  "immed": true,
+  "latedef": true,
+  "newcap": false,
+  "noarg": true,
+  "sub": true,
+  "undef": false,
+  "unused": false,
+  "boss": true,
+  "eqnull": true,
+  "node": true,
+  "browser": true
+}

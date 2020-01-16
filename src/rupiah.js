@@ -54,6 +54,7 @@
     }
 
     var _rupiah = '',
+        _usd = '',
         _valrev = value.toString().split('').reverse().join('')
   	for(var i = 0; i < _valrev.length; i++){
       if(i%3 === 0){
